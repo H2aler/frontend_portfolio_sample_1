@@ -40,6 +40,8 @@ npm run dev
 npm run build
 ```
 
+빌드된 파일은 `dist` 폴더에 생성됩니다.
+
 ### 미리보기
 
 ```bash
@@ -65,6 +67,29 @@ amazing-portfolio/
 ├── package.json
 └── vite.config.js
 ```
+
+## 🌐 GitHub Pages 배포
+
+이 프로젝트는 GitHub Actions를 통해 자동으로 배포됩니다.
+
+### 배포 설정
+
+1. GitHub 저장소의 **Settings** → **Pages**로 이동
+2. **Source**를 **"GitHub Actions"**로 선택
+3. `main` 브랜치에 푸시하면 자동으로 빌드되고 배포됩니다
+
+### 배포 URL
+
+배포가 완료되면 다음 URL에서 확인할 수 있습니다:
+```
+https://h2aler.github.io/frontend_portfolio_sample_1/
+```
+
+**중요:** 
+- GitHub Pages는 **빌드된 파일(`dist` 폴더)**만 제공할 수 있습니다
+- 소스 파일(`/src/main.jsx`)을 직접 제공할 수 없습니다
+- `npm run build`로 빌드한 후 `dist` 폴더의 내용을 배포해야 합니다
+- GitHub Actions가 자동으로 이를 처리합니다
 
 ## 🎨 커스터마이징
 
