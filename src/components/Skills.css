@@ -1,0 +1,79 @@
+.skills {
+   padding: 6rem 0;
+  position: relative;
+}
+
+.skills-header {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Courier New', monospace;
+}
+
+.code-bracket {
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-item {
+  background: var(--dark-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-item:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+  background: var(--dark-surface);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-name {
+  font-weight: 500;
+  color: var(--text);
+  font-size: 0.9375rem;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-item {
+    padding: 1rem;
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+  }
+}
